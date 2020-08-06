@@ -31,7 +31,8 @@ public class Bank {
                      	
                      	String aname = in.next() + in.nextLine(); 
                      	customer.put(id, aname);
-                	System.out.println("                                Your unique id is " + id);
+                     	System.out.println("                             Hello " + aname);
+                	System.out.println("                                 Your unique id is " + id);
                 	
                 	
                 	balance.put(id, 1000);
@@ -49,8 +50,8 @@ public class Bank {
                 	
                 		if(customer.containsKey(userId))
                 		{
-                		     System.out.println("Welcome " + customer.get(userId));	
-                			System.out.println("Your balance is :" + balance.get(userId));
+                		     System.out.println("                         Welcome " + customer.get(userId));	
+                			System.out.println("                          Your balance is :" + balance.get(userId));
                 		}
                 		else
                 			System.out.println("ID not found");
@@ -68,7 +69,7 @@ public class Bank {
                 	int value=in.nextInt();
                 	try {
                 	int newbalance=(balance.get(userId)-value);
-                	  System.out.println("The balance after withdraw is :" +newbalance);
+                	  System.out.println("                                  The balance after withdraw is :" +newbalance);
                 	
             			balance.put(userId, newbalance);
                 	}catch(Exception e)
@@ -84,7 +85,7 @@ public class Bank {
                 	int userId=in.nextInt();
                 	if(customer.containsKey(userId))
                 	{
-                		System.out.println("Please enter the balance to add");
+                		System.out.println("                                Please enter the balance to add");
                 		int bal=in.nextInt();
                 		int newbal=balance.get(userId)+bal;
                 		
@@ -102,26 +103,7 @@ public class Bank {
         
         
         
-        
-        
     }
 
- private static void AddBalance() {
 
-    	
-    }
-
-    private static void Withdraw() {
-
-    }
-
-    private static void CheckBalance() {
-
-    }
-
-    private static void AddAccount() {
-    	
-    	
-
-    }
 }
