@@ -100,7 +100,11 @@ public class Bank {
                     System.out.println("Wrong input");
             }
         }
-        
+        /*Please enter your unique ID 
+100
+Please enter the amount to withdraw
+5778
+                                  The balance after withdraw is :-4778*/
         
         
     }
